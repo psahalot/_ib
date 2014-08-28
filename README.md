@@ -1,10 +1,23 @@
 == IB Theme ==
 =========
 
-ThemeKraft Starter Theme
+IB Theme
+
+IB WordPress Theme, Copyright (C) 2014 IdeaBox Themes
+IB is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
 
-Hi. I'm a starter theme called `IB Theme`. I'm a theme meant for hacking so don't use me as just as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a starter theme called `Ib`. I'm a theme meant for hacking so don't use me as just as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
 
@@ -27,14 +40,14 @@ If you want to set things up manually, download `IB Theme` from github. The firs
 
 1. Search for `'ib'` (inside single quotations) to capture the text domain.
 2. Search for `ib_` to capture all the function names.
-3. Search for <code>&nbsp;IB Theme</code> (with a space before it) to capture DocBlocks.
+3. Search for <code>&nbsp;Ideabox</code> (with a space before it) to capture DocBlocks.
 4. Search for `ib-` to capture prefixed handles.
 
 OR
 
 * Search for: `'ib'` and replace with: `'megatherium'`
 * Search for: `ib_` and replace with: `megatherium_`
-* Search for: <code>&nbsp;IB Theme</code> and replace with: <code>&nbsp;Megatherium</code>
+* Search for: <code>&nbsp;Ideabox</code> and replace with: <code>&nbsp;Megatherium</code>
 * Search for: `ib-` and replace with: `megatherium-`
 
 Then, update the stylesheet header in style.css and the links in footer.php with your own information. Next, update or delete this readme.
