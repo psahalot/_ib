@@ -94,7 +94,7 @@ add_action( 'widgets_init', '_ib_widgets_init' );
 function _ib_scripts() {
 
 	// load bootstrap css
-	wp_enqueue_style( '_ib-bootstrap', get_template_directory_uri() . '/includes/css/bootstrap.css' );
+	wp_enqueue_style( '_ib-bootstrap', get_template_directory_uri() . '/includes/css/bootstrap.min.css' );
 
 	// load _ib styles
 	wp_enqueue_style( '_ib-style', get_stylesheet_uri() );
