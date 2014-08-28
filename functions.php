@@ -95,6 +95,8 @@ function _ib_scripts() {
 
 	// load bootstrap css
 	wp_enqueue_style( '_ib-bootstrap', get_template_directory_uri() . '/includes/css/bootstrap.min.css' );
+        
+         wp_enqueue_style( '_ib-fontawesome', get_template_directory_uri() . '/includes/css/font-awesome.min.css' , array(), '4.0.3', 'all' );
 
 	// load _ib styles
 	wp_enqueue_style( '_ib-style', get_stylesheet_uri() );
