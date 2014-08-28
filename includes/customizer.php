@@ -1,8 +1,8 @@
 <?php
 /**
- * IB Theme Theme Customizer
+ * _ib Theme Customizer
  *
- * @package IB Theme
+ * @package _ib
  */
 
 /**

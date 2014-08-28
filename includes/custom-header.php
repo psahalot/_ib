@@ -13,7 +13,7 @@
 	<?php } // if ( ! empty( $header_image ) ) ?>
 
  *
- * @package IB Theme
+ * @package _ib
  */
 
 /**
@@ -23,7 +23,7 @@
  * @uses ib_admin_header_style()
  * @uses ib_admin_header_image()
  *
- * @package IB Theme
+ * @package _ib
  */
 function ib_custom_header_setup() {
 	if ( function_exists( 'add_theme_support' ) ) {

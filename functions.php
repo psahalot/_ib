@@ -1,8 +1,8 @@
 <?php
 /**
- * IB Theme functions and definitions
+ * _ib functions and definitions
  *
- * @package IB Theme
+ * @package _ib
  */
 
 /**
@@ -57,7 +57,7 @@ function ib_setup() {
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
-	 * If you're building a theme based on IB Theme, use a find and replace
+	 * If you're building a theme based on _ib, use a find and replace
 	 * to change 'ib' to the name of your theme in all the template files
 	*/
 	load_theme_textdomain( 'ib', get_template_directory() . '/languages' );
@@ -94,13 +94,13 @@ add_action( 'widgets_init', 'ib_widgets_init' );
 function ib_scripts() {
 
 	// load bootstrap css
-	wp_enqueue_style( 'ib-bootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap.css' );
+	wp_enqueue_style( 'ib-bootstrap', get_template_directory_uri() . '/includes/css/bootstrap.css' );
 
-	// load IB Theme styles
+	// load _ib styles
 	wp_enqueue_style( 'ib-style', get_stylesheet_uri() );
 
 	// load bootstrap js
-	wp_enqueue_script('ib-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.js', array('jquery') );
+	wp_enqueue_script('ib-bootstrapjs', get_template_directory_uri().'/includes/js/bootstrap.js', array('jquery') );
 
 	// load bootstrap wp js
 	wp_enqueue_script( 'ib-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery') );
@@ -147,32 +147,3 @@ require get_template_directory() . '/includes/jetpack.php';
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
-
-function html_tag_schema() {
-    $schema = 'http://schema.org/';
- 
-    // Is single post
-    if(is_single()) {
-        $type = "Article";
-    }
-    
-    if(is_home()) {
-        $type = "BlogPage";
-    }
- 
-    // Is author page
-    elseif( is_author() ) {
-        $type = 'ProfilePage';
-    }
-    
-    // Is search results page
-    elseif( is_search() ) {
-        $type = 'SearchResultsPage';
-    }
- 
-    else {
-        $type = 'WebPage';
-    }
- 
-    echo 'itemscope="itemscope" itemtype="' . $schema . $type . '"';
-}

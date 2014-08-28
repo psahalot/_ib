@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area
  *
- * @package IB Theme
+ * @package _ib
  */
 ?>
 

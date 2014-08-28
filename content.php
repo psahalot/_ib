@@ -1,6 +1,6 @@
 <?php
 /**
- * @package IB Theme
+ * @package _ib
  */
 ?>
 

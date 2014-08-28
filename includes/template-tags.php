@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package IB Theme
+ * @package _ib
  */
 
 if ( ! function_exists( 'ib_content_nav' ) ) :
@@ -221,6 +221,36 @@ function ib_posted_on() {
 	);
 }
 endif;
+
+
+function html_tag_schema() {
+    $schema = 'http://schema.org/';
+ 
+    // Is single post
+    if(is_single()) {
+        $type = "Article";
+    }
+    
+    if(is_home()) {
+        $type = "BlogPage";
+    }
+ 
+    // Is author page
+    elseif( is_author() ) {
+        $type = 'ProfilePage';
+    }
+    
+    // Is search results page
+    elseif( is_search() ) {
+        $type = 'SearchResultsPage';
+    }
+ 
+    else {
+        $type = 'WebPage';
+    }
+ 
+    echo 'itemscope="itemscope" itemtype="' . $schema . $type . '"';
+}
 
 /**
  * Returns true if a blog has more than 1 category

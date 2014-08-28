@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying search forms in IB Theme
+ * The template for displaying search forms in _ib
  *
- * @package IB Theme
+ * @package _ib
  */
 ?>
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">

@@ -7,7 +7,7 @@
  * handled by a callback to ib_comment() which is
  * located in the includes/template-tags.php file.
  *
- * @package IB Theme
+ * @package _ib
  */
 
 /*

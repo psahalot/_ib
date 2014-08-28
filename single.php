@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package IB Theme
+ * @package _ib
  */
 
 get_header(); ?>

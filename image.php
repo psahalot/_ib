@@ -2,7 +2,7 @@
 /**
  * The template for displaying image attachments.
  *
- * @package IB Theme
+ * @package _ib
  */
 
 get_header(); ?>
