@@ -69,6 +69,22 @@ Now you're ready to go! The next step is easy to say but harder to do: make an a
 
 Good luck!
 
+== License and Credits ==
+
+Bootstrap 
+Source: http://getbootstrap.com
+License: Licensed under MIT License
+License URI: https://github.com/twbs/bootstrap/blob/master/LICENSE 
+
+Bootsrap Multi Level Drop Down
+Author: Jeff Mould
+Source: https://github.com/jeffmould/multi-level-bootstrap-menu
+License: GPL 2.0+
+
+Font Awesome 4.0.3 
+Author: Dave Gandy - http://fontawesome.io - @fontawesome
+License: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+
 
 == Changelog ==
 ---------------
