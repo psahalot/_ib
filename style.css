@@ -1,19 +1,21 @@
 /*
 Theme Name: _ib
-Theme URI: http://ideaboxthemes.com/themes/ib-theme/
+Theme URI: https://github.com/psahalot/_ib
 Author: IdeaBox Themes
 Author URI: http://ideaboxthemes.com/
 Description: Hi, I am the ultra minimal starter theme _ib, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress.
-Version: 1.1.2
+Version: 1.0
 License: GNU General Public License
 License URI: see license.txt
-Tags: coffee, nightshift
+Tags: 
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
 This theme is the most seamless and minimalistic integration of Twitter Bootstrap Framework into
 the _s starter theme from Automattic, the guys behind WordPress.
+
+This theme has been derived from _tk https://github.com/Themekraft/_tk which is licensed under GPL. 
 
 _s (or Underscores) http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
@@ -22,7 +24,7 @@ Twitter Bootstrap
 
 */
 
-/* Import the necessary TK Bootstrap WP CSS additions */
+/* Import the necessary Bootstrap WP CSS additions */
 @import url( includes/css/bootstrap-wp.css );
 
 
