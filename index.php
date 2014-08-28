@@ -28,7 +28,7 @@ get_header(); ?>
 
 		<?php endwhile; ?>
 
-		<?php ib_content_nav( 'nav-below' ); ?>
+		<?php _ib_content_nav( 'nav-below' ); ?>
 
 	<?php else : ?>
 

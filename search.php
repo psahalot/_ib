@@ -10,7 +10,7 @@ get_header(); ?>
 	<?php if ( have_posts() ) : ?>
 
 		<header class="page-header">
-			<h2 class="page-title"><?php printf( __( 'Search Results for: %s', 'ib' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
+			<h2 class="page-title"><?php printf( __( 'Search Results for: %s', '_ib' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 		</header><!-- .page-header -->
 
 		<?php // start the loop. ?>
@@ -20,7 +20,7 @@ get_header(); ?>
 
 		<?php endwhile; ?>
 
-		<?php ib_content_nav( 'nav-below' ); ?>
+		<?php _ib_content_nav( 'nav-below' ); ?>
 
 	<?php else : ?>
 

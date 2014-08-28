@@ -18,10 +18,10 @@
 			<div class="site-footer-inner col-sm-12">
 
 				<div class="site-info">
-					<?php do_action( 'ib_credits' ); ?>
-					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'ib' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'ib' ), 'WordPress' ); ?></a>
+					<?php do_action( '_ib_credits' ); ?>
+					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', '_ib' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', '_ib' ), 'WordPress' ); ?></a>
 					<span class="sep"> | </span>
-					<?php printf( __( 'Theme: %1$s by %2$s.', 'ib' ), 'ib', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+					<?php printf( __( 'Theme: %1$s by %2$s.', '_ib' ), '_ib', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
 				</div><!-- close .site-info -->
 
 			</div>

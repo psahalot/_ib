@@ -11,12 +11,12 @@ get_header(); ?>
 	<section class="content-padder error-404 not-found">
 
 		<header class="page-header">
-			<h2 class="page-title"><?php _e( 'Oops! Something went wrong here.', 'ib' ); ?></h2>
+			<h2 class="page-title"><?php _e( 'Oops! Something went wrong here.', '_ib' ); ?></h2>
 		</header><!-- .page-header -->
 
 		<div class="page-content">
 
-			<p><?php _e( 'Nothing could be found at this location. Maybe try a search?', 'ib' ); ?></p>
+			<p><?php _e( 'Nothing could be found at this location. Maybe try a search?', '_ib' ); ?></p>
 
 			<?php get_search_form(); ?>
 

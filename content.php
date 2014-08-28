@@ -26,7 +26,7 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php ib_posted_on(); ?>
+			<?php _ib_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -37,10 +37,10 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content" itemprop="text">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'ib' ) ); ?>
+		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', '_ib' ) ); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'ib' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', '_ib' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -51,29 +51,29 @@
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'ib' ) );
-				if ( $categories_list && ib_categorized_blog() ) :
+				$categories_list = get_the_category_list( __( ', ', '_ib' ) );
+				if ( $categories_list && _ib_categorized_blog() ) :
 			?>
 			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'ib' ), $categories_list ); ?>
+				<?php printf( __( 'Posted in %1$s', '_ib' ), $categories_list ); ?>
 			</span>
 			<?php endif; // End if categories ?>
 
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'ib' ) );
+				$tags_list = get_the_tag_list( '', __( ', ', '_ib' ) );
 				if ( $tags_list ) :
 			?>
 			<span class="tags-links">
-				<?php printf( __( 'Tagged %1$s', 'ib' ), $tags_list ); ?>
+				<?php printf( __( 'Tagged %1$s', '_ib' ), $tags_list ); ?>
 			</span>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'ib' ), __( '1 Comment', 'ib' ), __( '% Comments', 'ib' ) ); ?></span>
+		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', '_ib' ), __( '1 Comment', '_ib' ), __( '% Comments', '_ib' ) ); ?></span>
 		<?php endif; ?>
 
-		<?php edit_post_link( __( 'Edit', 'ib' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', '_ib' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->
