@@ -56,6 +56,9 @@ Now you're ready to go! The next step is easy to say but harder to do: make an a
 
 Good luck!
 
+We used the Following Schema in this WordPress theme.
+Source:http://schema.org/docs/documents.html
+
 
 == Changelog ==
 ---------------
