@@ -46,9 +46,7 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 == Getting Started ==
 ---------------------
 
-If you want to keep it simple, head over to http://underscores.me and generate your `_ib` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
-
-If you want to set things up manually, download `_ib` from github. The first thing you want to do is copy the `_ib` directory and change the name to something else - Like, say, `megatherium` - then you'll need to do a three-step find and replace on the name in all the templates.
+If you want to set things up, download `_ib` from github. The first thing you want to do is copy the `_ib` directory and change the name to something else - Like, say, `megatherium` - then you'll need to do a three-step find and replace on the name in all the templates.
 
 1. Search for `'_ib'` (inside single quotations) to capture the text domain.
 2. Search for `_ib_` to capture all the function names.
